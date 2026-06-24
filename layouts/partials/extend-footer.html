@@ -1,0 +1,78 @@
+<!-- Floating M Button -->
+<div id="m-button-container" style="position: fixed; bottom: 30px; right: 30px; z-index: 9999;">
+  
+  <!-- Menu with Slide-up Animation -->
+  <div id="m-menu" style="display: none; position: absolute; bottom: 80px; right: 0; background: transparent; padding: 0; width: 60px; text-align: center;">
+    
+    <!-- GitHub (Black) -->
+    <a href="https://github.com/mehrali-hub" title="GitHub" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: #000000; color: white; border-radius: 50%; margin: 0 auto 15px auto; font-size: 22px; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: transform 0.2s;">
+      <i class="fab fa-github"></i>
+    </a>
+    
+    <!-- Kaggle (Blue) -->
+    <a href="https://kaggle.com/mehralieng" title="Kaggle" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: #20BEFF; color: white; border-radius: 50%; margin: 0 auto 15px auto; font-size: 22px; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: transform 0.2s;">
+      <i class="fab fa-kaggle"></i>
+    </a>
+    
+    <!-- Gmail (Red) -->
+    <a href="mailto:sheikhmehrali5@gmail.com" title="Gmail" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: #EA4335; color: white; border-radius: 50%; margin: 0 auto 15px auto; font-size: 20px; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: transform 0.2s;">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+  <!-- Main M Button -->
+  <button id="m-button" style="width: 60px; height: 60px; border-radius: 50%; background-color: #FACC15; color: black; font-size: 24px; font-weight: bold; border: none; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: transform 0.3s ease;">
+    M
+  </button>
+</div>
+
+<!-- Load Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Custom CSS Animations -->
+<style>
+  /* Menu Slide Up and Fade In Animation */
+  @keyframes slideUpFade {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .menu-active {
+    display: block !important;
+    animation: slideUpFade 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  /* Hover micro-interactions for links */
+  #m-menu a:hover {
+    transform: scale(1.15);
+  }
+
+  #m-button:hover {
+    transform: scale(1.08);
+  }
+  
+  #m-button:active {
+    transform: scale(0.95);
+  }
+</style>
+
+<script>
+  const mButton = document.getElementById("m-button");
+  const mMenu = document.getElementById("m-menu");
+
+  mButton.onclick = function(e) {
+    e.stopPropagation();
+    mMenu.classList.toggle("menu-active");
+  };
+
+  // Close when clicking anywhere else on the page
+  document.addEventListener("click", function() {
+    mMenu.classList.remove("menu-active");
+  });
+</script>

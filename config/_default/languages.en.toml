@@ -1,0 +1,24 @@
+locale = "en"
+label = "English"
+weight = 1
+title = "Mehr portfolio"
+
+[params]
+  displayName = "English"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "img/logo.png"
+  description = "A powerful, lightweight theme for Hugo."
+
+[params.author]
+    name = "Mehrali"
+    email = "sheikhmehrali5@gmail.com"
+    # Replace the image path with your own profile photo later
+    image = "img/profile.png"
+    headline = "AI Engineer & Full Stack Developer & Machine Learning Engineer"
+    bio = "Passionate about building intelligent systems and scalable web applications."
+    links = [
+        { github = "https://github.com/mehrali-hub" },
+        { kaggle = "https://www.kaggle.com/mehralieng" }
+    ]
