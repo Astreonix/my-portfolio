@@ -16,7 +16,7 @@ title = "Mehr Ali"
     email = "sheikhmehrali5@gmail.com"
     # Replace the image path with your own profile photo later
     image = "img/profile.png"
-    headline = "AI Engineer & Full Stack Developer & Machine Learning Engineer"
+    headline = "AI Engineer | Machine Learning Engineer | Full-Stack Developer | Tech Blogger"
     bio = "Passionate about building intelligent systems and scalable web applications."
     links = [
         { github = "https://github.com/mehrali-hub" },
