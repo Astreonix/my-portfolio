@@ -7,4 +7,4 @@ title: "My Certificates"
 *   **Completion Date:** January 28, 2026
 *   **Certificate ID:** #45,829,887
 
-![Intermediate GitHub Concepts](/images/certificate.png)
+![Intermediate GitHub Concepts](/images/certificate.pdf)

@@ -12,7 +12,7 @@ title = "Mehr Ali"
   description = "A powerful, lightweight theme for Hugo."
 
 [params.author]
-    name = "Mehrali"
+    name = "Mehr Ali"
     email = "sheikhmehrali5@gmail.com"
     # Replace the image path with your own profile photo later
     image = "img/profile.png"
