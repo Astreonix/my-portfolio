@@ -244,8 +244,8 @@ The **Used Car Price Prediction** project is an end-to-end regression pipeline d
 This project proves you understand **Model Robustness**. By demonstrating that you can diagnose why a model "collapses" and fix it with regularization, you showcase the critical engineering mindset needed to build production-grade AI systems rather than just running static scripts.
 
 ### **Access the Source**
+👉 **[View Repository on GitHub]### **Access the Source**
 👉 **[View Repository on GitHub](https://github.com/Astreonix/Zynvex-AI-ML-internship/tree/main/Project-02-Used-Cars-Price-Prediction)**
-
 ---
 
 # 🚀Python Learning Journey:
