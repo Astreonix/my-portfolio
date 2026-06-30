@@ -73,11 +73,11 @@ ip route get 1 | awk '{print $7;exit}'
 
 This isolates the local private IP address. Note this down for the final link.
 
-[check the ssh version](/images/9.jpeg)
+![check the ssh version](/images/9.jpeg)
 
 now :
 
-[Successful remote SSH terminal session into Kali Linux](/images/7.jpeg)
+![Successful remote SSH terminal session into Kali Linux](/images/7.jpeg)
 
 ## Phase 3: Establishing the Link
 
@@ -89,14 +89,14 @@ The terminal instantly responded, creating a secure cryptographic handshake:he l
 
 The boundary between the two laptops was officially gone. Every keystroke entered from this point forward was executing natively on the hardware of the second machine.
 
-[access](/images/8.jpeg)
+![access](/images/8.jpeg)
 
 ## Phase 4: Remote File Manipulation
 To test the integrity of the write permissions over the new connection, I dropped a custom string directly into a new text file on the remote machine:
 
 echo "Welcome to the Astreonix World" > welcome.txt
 
-[remotely control](/images/4.jpeg)
+![remotely control](/images/4.jpeg)
 
 ## Command Breakdown:
 echo "...": Spits out the text string.
@@ -109,7 +109,7 @@ To verify the file's contents without moving an inch, I read the file back remot
 
 cat welcome.txt
 
-[file created](/images/12.jpeg)
+![file created](/images/12.jpeg)
 
 ## Phase 5: Graceful Disconnection
 When the remote maintenance session is complete, it is best practice to close the encrypted socket cleanly rather than just killing the terminal window:
