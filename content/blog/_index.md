@@ -32,7 +32,7 @@ Once the connection is established, the client machine can execute commands, mod
 
 Every great engineering project comes with a debugging phase. When I fired up my first connection attempts, the terminal repeatedly blocked my requests with a frustrating loop of errors.
 
-![Debugging local loopback connections](/images/1.png)
+![Debugging local loopback connection
 
 
 ### The Post-Mortem Analysis
@@ -77,7 +77,7 @@ This isolates the local private IP address. Note this down for the final link.
 
 now :
 
-![Successful remote SSH terminal session into Kali Linux](/images/7.jpeg)
+![Successful remote SSH terminal session into Kali Linux](/images/7.png)
 
 ## Phase 3: Establishing the Link
 
@@ -89,14 +89,14 @@ The terminal instantly responded, creating a secure cryptographic handshake:he l
 
 The boundary between the two laptops was officially gone. Every keystroke entered from this point forward was executing natively on the hardware of the second machine.
 
-![access](/images/8.jpeg)
+![access](/images/8.png)
 
 ## Phase 4: Remote File Manipulation
 To test the integrity of the write permissions over the new connection, I dropped a custom string directly into a new text file on the remote machine:
 
 echo "Welcome to the Astreonix World" > welcome.txt
 
-![remotely control](/images/4.jpeg)
+![remotely control](/images/4.png)
 
 ## Command Breakdown:
 echo "...": Spits out the text string.
